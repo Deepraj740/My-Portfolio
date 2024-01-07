@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <span style="color: #fea227">Dee</span>pu
+          <span style="color: #fea227">Raj</span>put
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- section of home -->
+
+    <div id="home">
+      <div class="first">
+        Hi there,
+        <h1>I'm <span style="color: #fea227">Deepu Rajput,</span></h1>
+        a front-end developer passionate about translating design into
+        delightful user experiences. Proficient in HTML, CSS, JavaScript and
+        React, I aim to create visually stunning and responsive websites. Let's
+        innovate and elevate the digital landscape together!
+        <h1>
+          <button class="Portfoliobtn">
+            <a href="#portfolio" class="Portfoliobtn">View Portfolio</a>
+          </button>
+        </h1>
+      </div>
+      <div class="second">
+        <img src="./items/kindpng_1127747 (2).png" alt="" />
+      </div>
+    </div>
+
+    <!-- section of portfolio -->
+
+    <div id="portfolio">
+      <div class="heading">
+        <h1>Portfolio</h1>
+        <p>Check out some of my recent projects below.</p>
+      </div>
+
+      <div class="projectcontainer">
+        <div class="project">
+          <img src="./items/ecommerce.PNG" alt="Project 2" />
+          <h2>bigMart</h2>
+          <p>
+            Explore fashion effortlessly at bigMart, where men, women, and kids
+            find curated styles. With a secure cart, indulge in a seamless
+            shopping experience for the whole family.
+          </p>
+          <p>
+            <span style="font-size: large">Technologies used:</span> React,
+            Node.js, MongoDB
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="./items/mackup.PNG" alt="Project 2" />
+          <h2>Manya mackeup Creation</h2>
+          <p>
+            Discover beauty with ease at Manya Mackup Creation. Elevate your
+            style with our premium products, expert services, and specialized
+            bridal makeup and hair solutions.
+          </p>
+          <p>
+            <span style="font-size: large">Technologies used:</span>
+            Html,Css,Bootstrap
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="./items/gym.PNG" alt="Project 2" />
+          <h2>Being Strong Fitness</h2>
+          <p>
+            Elevate your fitness at Being Strong Fitness—where tailored
+            guidance, premium equipment, and expert trainers converge for your
+            optimal health and well-being. Join us on the path to a stronger,
+            healthier you!
+          </p>
+          <p>
+            <span style="font-size: large">Technologies used:</span> Html,Css
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section of skills -->
+
+    <div id="skills">
+      <div class="heading">
+        <h1>My Technical Skills</h1>
+        <p>Explore my proficiency in various technical areas.</p>
+      </div>
+      <div class="skillcontainer">
+        <div class="skill">
+          <img src="./items/html-5_5968267.png" alt="HTML" />
+          <h2>HTML</h2>
+          <div class="skill-bar" style="width: 90%"></div>
+        </div>
+
+        <div class="skill">
+          <img src="./items/css-3_5968242.png" alt="CSS" />
+          <h2>CSS</h2>
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+
+        <div class="skill">
+          <img src="./items/js_5968292.png" alt="JavaScript" />
+          <h2>JavaScript</h2>
+          <div class="skill-bar" style="width: 70%"></div>
+        </div>
+
+        <div class="skill">
+          <img src="./items/react_919851.png" alt="React.js" />
+          <h2>React.js</h2>
+          <div class="skill-bar" style="width: 95%"></div>
+        </div>
+
+        <div class="skill">
+          <img src="./items/letter-b_9082991.png" alt="Bootstrap" />
+          <h2>Bootstrap</h2>
+          <div class="skill-bar" style="width: 80%"></div>
+        </div>
+
+        <div class="skill">
+          <img src="./items/git_4494740.png" alt="Git" />
+          <h2>Git</h2>
+          <div class="skill-bar" style="width: 90%"></div>
+        </div>
+
+        <div class="skill">
+          <img src="./items/github_270798.png" alt="GitHub" />
+          <h2>GitHub</h2>
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+      </div>
+    </div>
+    <!-- section of contact -->
+
+    <div id="contact">
+      <div class="heading">
+        <h1>Contact Us</h1>
+        <p>Feel free to get in touch with us using the form below.</p>
+      </div>
+      <form action="#" class="contact-form" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2024 My Portfolio . All rights reserved.</p>
+    </footer>
+
+    <!-- section for functionality of javascript -->
+
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (
+          name.trim() === "" ||
+          email.trim() === "" ||
+          message.trim() === ""
+        ) {
+          alert("Please fill in all fields");
+          return false;
+        }
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>
